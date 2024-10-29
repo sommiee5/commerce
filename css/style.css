@@ -1,0 +1,356 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Poppins', sans-serif;
+background-color: #f5f5f5;
+}
+
+
+.nav-header {
+font-size: 25px;
+}
+
+/*navbar*/
+.links {
+gap: 30px;
+margin-left: 120px;
+cursor: pointer; 
+}
+
+.navbar{
+width: 100%;
+position: absolute;
+position: fixed;
+background-color: transparent !important;
+color: #f5f5f5 !important;
+transition: background-color 0.4s ease;
+z-index: 1;
+}
+
+.navbar.bg-scrolled {
+  background-color: rgba(0,0,0,0.8) !important;
+  transition: background-color 0.4s ease;
+}
+
+.menu {
+  cursor: pointer;
+}
+
+.dropdown-toggle::after {
+  transition: transform 0.2s;
+}
+.dropdown-toggle[data-bs-toggle="dropdown"].show::after {
+  transform: rotate(180deg);
+}
+
+.countdiv {
+  position: relative;
+}
+
+.cartcount {
+  font-size: 10px;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
+
+/*login*/
+.loginface img {
+  width: 100%;
+}
+
+.login-form-container {
+  display: flex;
+  align-items: start;
+}
+
+.login-info {
+  margin-top: 160px;
+  padding-left: 60px;
+}
+
+.offcanvas{
+  width: 35% !important;
+}
+
+.custom-offcanvas{
+width: 30% !important;
+background: #f5f5f5;
+transition: none;
+}
+
+.banner {
+width: 100%;
+height: 100vh;
+background-image: url("images/banner1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+/* background-attachment: fixed; */
+position: relative;
+}
+
+.shop {
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: #f5f5f5;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  padding: 10px 30px;
+}
+
+.shop:hover {
+  background: ghostwhite;
+}
+
+.summer-sales {
+  position: absolute;
+  left: 80px;
+  bottom: 100px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.add-to-cart-btn{
+  width: 100%;
+  position: absolute;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: #f5f5f5;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 60px;
+}
+
+.female-wears-1, .female-wears-2, .female-wears-3, .female-wears-4 {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: inline-block;
+}
+
+.female-wears-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-left: 15px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.female-wears-1 .price, .female-wears-2 .price, .female-wears-3 .price, .female-wears-4 .price {
+  font-size: 14px;
+  margin-left: 150px;
+}
+
+.female-wears-1 a, .female-wears-2 a, .female-wears-3 a, .female-wears-4 a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.female-wears-2 img , .female-wears-3 img, .female-wears-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+.female-wears-4 {
+  width: 97%;
+  height: 60vh;
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.first-banner{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 120px;
+}
+.first-banner img{
+  width: 98%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.second-banner{
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  padding-top: 120px;
+}
+.second-banner img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.shopmen{
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: white;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 60px;
+  bottom: 50px;
+  padding: 10px 200px;
+}
+
+.shopwomen{
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: white;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 70px;
+  bottom: 50px;
+  padding: 10px 200px;
+}
+
+.mens-popular, .tees, .woman, .top-tees {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  display: inline-block;
+}
+
+.mens-popular img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding-left: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mens-popular a, .tees a, .woman a, .top-tees a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.mens-popular .price {
+  margin-left: 130px;
+}
+
+.tees img, .woman img, .top-tees img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tees .price{
+  margin-left: 190px;
+}
+
+.woman .price{
+  padding-left: 210px;
+}
+
+.top-tees .price{
+  padding-left: 210px;
+}
+
+
+
+.third-banner {
+  width: 100%;
+  object-fit: cover;
+  padding-top: 80px;
+}
+
+.third-banner img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.display {
+  width: 30%;
+  object-fit: cover;
+  padding-top: 80px;
+}
+
+.display img {
+  width: 100%;
+  height: 16vh;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 2%;
+  padding-bottom: 6px;
+}
+
+.shopall {
+  position: absolute;
+  left: 80%;
+  transform: translateX(-80%);
+
+}
+
+.shopall a {
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  background: black;
+  padding: 10px 25px;
+  border-radius: 3px;
+}
+
+.fourth-banner{
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  padding-top: 120px;
+}
+.fourth-banner img{
+  width: 100%;
+  height: 135vh;
+  object-fit: cover;
+  object-position: center; 
+  padding: 0px;
+  margin: 0px;
+}
+
+.men-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  background: black;
+  height: 70vh;
+  color: #f5f5f5;
+  padding-top: 80px;
+}
+
+.newsletter {
+  padding-left: 100px;
+}
+
+.copyright, .policy, .terms, .info{
+  font-size: 16px;
+  color: #f5f5f5; 
+}
+
+.popular {
+  padding-top: 90px;
+}
